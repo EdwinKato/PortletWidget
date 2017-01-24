@@ -86,7 +86,7 @@ module.exports = function (grunt) {
             },
             mpks: {
                 files: [
-                    { dest: TEST_WIDGETS_FOLDER, cwd: "./dist/", src: [ pkg.name + ".mpk"], expand: true }
+                    { dest: TEST_WIDGETS_FOLDER, cwd: "./dist/widgets/", src: [ pkg.name + ".mpk"], expand: true }
                 ]
             }
         },

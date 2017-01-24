@@ -40,6 +40,22 @@
                 <enumerationValue key="reportStudioReport">Report studio report</enumerationValue>
             </enumerationValues>
         </property>
+        <property key="objectPath" type="attribute" required="true">
+            <caption>Dashboard Object/Report </caption>
+            <category>Data source</category>
+            <description>path to the object "Folder.Sub-Folder.DO-Name</description>
+            <attributeTypes>
+                <attributeType name="String" />
+            </attributeTypes>
+        </property>
+        <property key="refreshInterval" type="attribute" required="false">
+            <caption>Refresh interval </caption>
+            <category>Data source</category>
+            <description>Refresh interval</description>
+            <attributeTypes>
+                <attributeType name="integer" />
+            </attributeTypes>
+        </property>
     </properties>
 </widget>
 

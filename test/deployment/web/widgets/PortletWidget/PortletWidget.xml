@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="PortletWidget.widget.PortletWidget" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>PortletWidget</name>
+    <description>The description of this widget.</description>
+
+    <icon />
+
+    <properties>
+        <property key="serverURL" type="attribute">
+            <caption>Server URL</caption>
+            <category>Server credentials</category>
+            <description>Server URL</description>
+            <attributeTypes>
+                <attributeType name="String" />
+            </attributeTypes>
+        </property>
+        <property key="username" type="attribute">
+            <caption>Username</caption>
+            <category>Server credentials</category>
+            <description>Username</description>
+            <attributeTypes>
+                <attributeType name="String" />
+            </attributeTypes>
+        </property>
+        <property key="password" type="attribute" required="true" defaultValue="">
+            <caption>Password</caption>
+            <category>Server credentials</category>
+            <description>The password to the server.</description>
+            <attributeTypes>
+                <attributeType name="String" />
+            </attributeTypes>
+        </property>
+        <property key="objectType" type="enumeration" defaultValue="dashBoardObject">
+            <caption>Textcolor</caption>
+            <category>Appearance</category>
+            <description>The textcolor of the message in the widget</description>
+            <enumerationValues>
+                <enumerationValue key="dashBoardObject">Dashboard object</enumerationValue>
+                <enumerationValue key="queryStudioReport">Query studio report</enumerationValue>
+                <enumerationValue key="reportStudioReport">Report studio report</enumerationValue>
+            </enumerationValues>
+        </property>
+    </properties>
+</widget>
+
