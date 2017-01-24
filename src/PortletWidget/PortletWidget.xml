@@ -6,24 +6,39 @@
     <icon />
 
     <properties>
-        <property key="backgroundColor" type="attribute">
-            <caption>Background Color</caption>
-            <category>Appearance</category>
-            <description>The background color of the widget.</description>
+        <property key="serverURL" type="attribute">
+            <caption>Server URL</caption>
+            <category>Server credentials</category>
+            <description>Server URL</description>
             <attributeTypes>
                 <attributeType name="String" />
             </attributeTypes>
         </property>
-        <property key="messageString" type="string" required="true" defaultValue="">
-            <caption>Message</caption>
-            <category>Appearance</category>
-            <description>The message visible within the widget.</description>
+        <property key="username" type="attribute">
+            <caption>Username</caption>
+            <category>Server credentials</category>
+            <description>Username</description>
+            <attributeTypes>
+                <attributeType name="String" />
+            </attributeTypes>
         </property>
-        <property key="mfToExecute" type="microflow" required="false" defaultValue="">
-            <caption>Microflow</caption>
-            <category>Behavior</category>
-            <description>The microflow to execute on click.</description>
-            <returnType type="Boolean" />
+        <property key="password" type="attribute" required="true" defaultValue="">
+            <caption>Password</caption>
+            <category>Server credentials</category>
+            <description>The password to the server.</description>
+            <attributeTypes>
+                <attributeType name="String" />
+            </attributeTypes>
+        </property>
+        <property key="objectType" type="enumeration" defaultValue="dashBoardObject">
+            <caption>Textcolor</caption>
+            <category>Appearance</category>
+            <description>The textcolor of the message in the widget</description>
+            <enumerationValues>
+                <enumerationValue key="dashBoardObject">Dashboard object</enumerationValue>
+                <enumerationValue key="queryStudioReport">Query studio report</enumerationValue>
+                <enumerationValue key="reportStudioReport">Report studio report</enumerationValue>
+            </enumerationValues>
         </property>
     </properties>
 </widget>
